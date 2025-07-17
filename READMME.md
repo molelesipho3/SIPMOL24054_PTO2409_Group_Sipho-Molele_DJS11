@@ -39,7 +39,7 @@ To run the project in development mode:
 npm run dev
 ```
 
-This will start the development server, and you can access the application in your browser at `http://localhost:5173` (or the port indicated in your terminal).
+This will start the development server, and you can access the application in your browser at `http://localhost:5173/` (or the port indicated in your terminal).
 
 ## Deployment
 

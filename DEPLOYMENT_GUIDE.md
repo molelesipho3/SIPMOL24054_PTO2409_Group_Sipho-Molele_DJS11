@@ -24,7 +24,7 @@
 2. **What you'll see:** 
    ```
    ➜  Local:   http://localhost:5173/
-   ➜  Network: http://192.168.x.x:5173/
+   ➜  Network: http://10.234.174.145:5173/
    ```
 3. Click the local link to test your app
 4. Press `Ctrl+C` to stop the local server when done testing
@@ -66,7 +66,7 @@
 | Command | Purpose | What You See |
 |---------|---------|--------------|
 | `npm install` | Downloads all dependencies | Progress bar, creates `node_modules` |
-| `npm run dev` | Starts local development server | Local URL (http://localhost:5173) |
+| `npm run dev` | Starts local development server | Local URL (http://localhost:5173/) |
 | `npm run build` | Creates production files | Creates `dist` folder with optimized files |
 
 ### ✅ **How to Know You're Done:**
