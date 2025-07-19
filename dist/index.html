@@ -1,28 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PodCast - Your Podcast Destination</title>
-    <meta name="description" content="Discover, listen, and enjoy your favorite podcasts with PodCast. Browse thousands of shows, create favorites, and never miss an episode." />
-    <meta name="keywords" content="podcast, audio, shows, episodes, streaming, entertainment" />
-    <meta name="author" content="PodCast" />
-    
-    <!-- Open Graph / Facebook -->
+    <title>PodcastHub - Your Gateway to Audio Stories</title>
+    <meta name="description" content="Discover, listen, and manage your favorite podcasts all in one place. Stream episodes, create playlists, and never miss an update." />
+    <meta name="author" content="PodcastHub" />
+    <link rel="icon" href="/assets/favicon-3GNHBgxf.png" type="image/png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8B5CF6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PodcastHub">
+    <link rel="apple-touch-icon" href="/pwa-192x192.png">
+
+    <meta property="og:title" content="PodcastHub - Your Gateway to Audio Stories" />
+    <meta property="og:description" content="Discover, listen, and manage your favorite podcasts all in one place. Stream episodes, create playlists, and never miss an update." />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="PodCast - Your Podcast Destination" />
-    <meta property="og:description" content="Discover, listen, and enjoy your favorite podcasts with PodCast. Browse thousands of shows, create favorites, and never miss an episode." />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="PodCast - Your Podcast Destination" />
-    <meta property="twitter:description" content="Discover, listen, and enjoy your favorite podcasts with PodCast. Browse thousands of shows, create favorites, and never miss an episode." />
-    <script type="module" crossorigin src="/assets/index-BP9QX8vD.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DJgoDu5x.css">
+    <meta property="og:image" content="/pwa-512x512.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PodcastHub - Your Gateway to Audio Stories" />
+    <meta name="twitter:description" content="Discover, listen, and manage your favorite podcasts all in one place" />
+    <meta name="twitter:image" content="/pwa-512x512.png" />
+    <script type="module" crossorigin src="/assets/index-CqY-tyIm.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BkzG3T3N.css">
   </head>
+
   <body>
     <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            }, function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
-
