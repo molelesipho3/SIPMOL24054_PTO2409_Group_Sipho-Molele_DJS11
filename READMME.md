@@ -61,7 +61,7 @@ A modern, full-featured podcast streaming application built with React, TypeScri
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:8080` or `http://192.168.0.196:8080/` to view the application
+   Navigate to `http://localhost:8080` or `http://192.168.0.196:8080/` or `https://podcasthupp.netlify.app/` to view the application
 
 ### Building for Production
 
